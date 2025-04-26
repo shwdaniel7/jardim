@@ -1,0 +1,274 @@
+/* --- Reset Básico & Configurações Globais --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body {
+    font-family: "Winky Rough", sans-serif;
+    background-color: #ffc5ba; 
+    color: #4B4B4B;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+/* Importar Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+/* --- Botão de Música Fixo --- */
+#music-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(232, 90, 113, 0.8);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 1000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex; /* Center icon */
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+#music-toggle:hover {
+    background-color: #E85A71;
+    transform: scale(1.1);
+}
+
+
+/* --- Estrutura Principal e Seções (Telas) --- */
+#site-container { width: 100%; }
+
+.tela {
+    min-height: 115vh;
+    padding: 100px 30px 120px 30px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    border-bottom: 2px dotted #FADADD;
+}
+.tela:last-child {
+    border-bottom: none;
+}
+
+
+/* --- Estilos de Texto --- */
+h1 {
+    font-size: 2.2rem;
+    color: #E85A71;
+    margin-bottom: 0.8rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #E85A71;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.subtitulo {
+    font-size: 1.1rem;
+    color: #7A7A7A;
+    margin-bottom: 2rem;
+    font-weight: 300;
+}
+
+.instrucao {
+    font-style: italic;
+    color: #AAAAAA;
+    margin-top: 1rem;
+}
+
+p {
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+    max-width: 550px;
+    color: #5C5C5C;
+    font-weight: 400;
+}
+
+.conteudo-faixa > p:not(.track-description) { 
+     margin-bottom: 1rem; 
+}
+
+.conteudo-final > p:not(.final-description):not(.assinatura) {
+    margin-bottom: 1rem;
+}
+
+
+/* --- Imagens --- */
+#header-character {
+    max-width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 25px auto; 
+
+}
+
+.cassete-img {
+    max-width: 160px;
+    height: auto;
+    margin: 1.5rem auto 2rem auto;
+    display: block;
+    animation: breathe 3s infinite ease-in-out;
+}
+
+.cassete-final-img {
+    max-width: 220px;
+    height: auto;
+    margin: 1.5rem auto 2.5rem auto; 
+    display: block;
+    animation: breathe 3.5s infinite ease-in-out; 
+}
+
+
+/* --- Botão Ouvir Track --- */
+.track-button {
+    display: inline-block;
+    background-color: #1DB954; 
+    color: white;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    font-size: 1rem; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
+    margin-top: 0.8rem;
+}
+
+.track-button:hover {
+    background-color: #1AA34A; 
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.track-description {
+    margin-top: 0.5rem; 
+    font-size: 0.9rem;
+    color: #666666; 
+    font-style: italic;
+    margin-bottom: 0rem; 
+    line-height: 1.6; 
+    max-width: 480px; 
+    margin-left: auto;  
+    margin-right: auto;
+}
+
+.track-description span { 
+    font-weight: bold;  
+    font-style: normal; 
+}
+
+.lyric-color-pink   { color: #FF69B4; }
+.lyric-color-white  { color: #ffffff; text-shadow: 0 0 3px rgba(0, 0, 0, 0.6); } 
+.lyric-color-black  { color: #000000; } 
+.lyric-color-yellow { color: #a89238; } 
+.lyric-color-blue   { color: #3498DB; } 
+.lyric-color-red    { color: #E74C3C; } 
+.lyric-color-green  { color: #2ECC71; } 
+.lyric-color-orange { color: #E67E22; } 
+.lyric-color-purple { color: #8E44AD; } 
+
+/* --- Botão Spotify Final --- */
+.spotify-button {
+    display: inline-block;
+    background-color: #1DB954;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 1rem;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.spotify-button i {
+    margin-right: 10px;
+}
+
+.spotify-button:hover {
+    background-color: #1AA34A;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.final-description {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666666;
+    font-style: italic;
+    margin-bottom: 2rem; 
+    max-width: 550px;
+}
+
+.assinatura {
+    font-style: italic;
+    color: #888888;
+    font-weight: 300;
+     margin-top: 0;
+}
+
+
+/* --- ANIMAÇÕES --- */
+
+@keyframes breathe {
+    0% { transform: scale(1); opacity: 0.9; }
+    50% { transform: scale(1.03); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.9; }
+}
+
+.animate__animated {
+  /* Default */
+}
+.animate__fadeInDown {
+   /* Default */
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px); 
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    transition-delay: 0.2s;
+}
+
+.tela.visible .animate-on-scroll {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.tela.visible h2.animate-on-scroll { transition-delay: 0.1s; }
+.tela.visible .cassete-img.animate-on-scroll { transition-delay: 0.2s; }
+.tela .conteudo-faixa > p.animate-on-scroll:not(.track-description) { transition-delay: 0.3s; }
+.tela.visible .track-description.animate-on-scroll { transition-delay: 0.4s; } /* Lyric description after message */
+.tela.visible .track-button.animate-on-scroll { transition-delay: 0.5s; } /* Button after lyric */
+
+.tela#tela-final.visible h2.animate-on-scroll { transition-delay: 0.1s; }
+.tela#tela-final.visible .cassete-final-img.animate-on-scroll { transition-delay: 0.3s; }
+.tela#tela-final.visible .conteudo-final > p.animate-on-scroll:not(.final-description):not(.assinatura) { transition-delay: 0.4s; }
+.tela#tela-final.visible .spotify-button.animate-on-scroll { transition-delay: 0.5s; }
+.tela#tela-final.visible p.final-description.animate-on-scroll { transition-delay: 0.6s; }
+.tela#tela-final.visible p.assinatura.animate-on-scroll { transition-delay: 0.7s; }
+
+
+/* --- Responsividade --- */
+@media (min-width: 768px) {
+    h1 { font-size: 2.8rem; }
+    h2 { font-size: 2.2rem; }
+    p { font-size: 1.1rem; }
+    .track-description { font-size: 1rem; } 
+    .final-description { font-size: 1rem; }
+    .tela { padding: 120px 50px 140px 50px; }
+    #header-character { max-width: 180px; margin-bottom: 30px;}
+    .cassete-img { max-width: 180px; }
+    .cassete-final-img { max-width: 250px; }
+}

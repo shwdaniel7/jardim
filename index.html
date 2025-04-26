@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jardim</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio id="background-music" loop>
+        <source src="assets/audio/background-music.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
+    <button id="music-toggle" aria-label="Tocar Música">
+        <i class="fas fa-play"></i>
+    </button>
+
+    <main id="site-container">
+
+        <!-- Tela 1: Entrada -->
+        <section id="tela-entrada" class="tela">
+             <img src="assets/images/personagem-principal.jpg" id="header-character" alt="Personagem Guia">
+            <h1>um jardim para você.</h1>
+            <p class="subtitulo">uma mixtape que brotou, faixa por faixa...</p>
+            <p class="instrucao">role para explorar</p>
+        </section>
+
+        <!-- Tela 2: Faixa 1 -->
+        <section id="tela-track1" class="tela">
+            <div class="conteudo-faixa">
+                <h2 class="animate-on-scroll">Track 01: sementes de carinho</h2>
+                <img src="assets/images/cassete1.png" class="cassete-img animate-on-scroll" alt="Fita Cassete 1">
+                <p class="animate-on-scroll">oi marcela. você realmente faz falta, e essa saudade me fez criar esse pequeno lugar. espero que goste.</p>
+                <a href="https://www.youtube.com/watch?v=uzS3WG6__G4" target="_blank" class="track-button animate-on-scroll"><i class="fab fa-youtube"></i> Ouvir Track 01</a>
+                <p class="track-description animate-on-scroll">
+                    "If the sky is <span class="lyric-color-pink">pink</span> & <span class="lyric-color-white">white</span>, if the ground is <span class="lyric-color-black">black</span> and <span class="lyric-color-yellow">yellow</span>. It's the same way you showed me"
+                </p>
+            </div>
+        </section>
+
+        <!-- Tela 3: Faixa 2 -->
+        <section id="tela-track2" class="tela">
+            <div class="conteudo-faixa">
+                <h2 class="animate-on-scroll">Track 02: acordes silenciados</h2>
+                <img src="assets/images/cassete2.png" class="cassete-img animate-on-scroll" alt="Fita Cassete 2">
+                <p class="animate-on-scroll">sei que tudo ficou estranho, mas... eu sinto falta das nossas conversas, da sua companhia.</p>
+                <a href="https://www.youtube.com/watch?v=cxSzri346W0" target="_blank" class="track-button animate-on-scroll"><i class="fab fa-youtube"></i> Ouvir Track 02</a>
+                <p class="track-description animate-on-scroll">
+                    "Quantas <span class="lyric-color-blue">saudades</span> eu senti, e de tristezas vou viver. E aquele <span class="lyric-color-red">adeus</span> não pude dar"
+                </p>
+            </div>
+        </section>
+
+        <!-- Tela 4: Faixa 3 -->
+        <section id="tela-track3" class="tela">
+            <div class="conteudo-faixa">
+                <h2 class="animate-on-scroll">Track 03: melodia da esperança</h2>
+                <img src="assets/images/cassete3.png" class="cassete-img animate-on-scroll" alt="Fita Cassete 3">
+                <p class="animate-on-scroll">a verdade é que você é muito importante pra mim. sinto falta da sua amizade... gostaria muito se, um dia, pudéssemos voltar a conversar, mesmo que só como amigos.</p>
+                <a href="https://www.youtube.com/watch?v=VMFJwSR1MQQ" target="_blank" class="track-button animate-on-scroll"><i class="fab fa-youtube"></i> Ouvir Track 03</a>
+                <p class="track-description animate-on-scroll">
+                    "Are we still <span class="lyric-color-green">friends?</span> Can we be <span class="lyric-color-green">friends?</span>"
+                </p>
+            </div>
+        </section>
+
+        <!-- Tela 5: Faixa 4 -->
+        <section id="tela-track4" class="tela">
+            <div class="conteudo-faixa">
+                <h2 class="animate-on-scroll">Track 04: no seu ritmo</h2>
+                <img src="assets/images/cassete4.png" class="cassete-img animate-on-scroll" alt="Fita Cassete 4 Florescida">
+                <p class="animate-on-scroll">fiz isso como um presente, você não tem obrigação nenhuma de responder. entendo e respeito totalmente sua decisão, qualquer que seja.</p>
+                <a href="https://www.youtube.com/watch?v=Dlz_XHeUUis" target="_blank" class="track-button animate-on-scroll"><i class="fab fa-youtube"></i> Ouvir Track 04</a>
+                 <p class="track-description animate-on-scroll">
+                    "I care for <span class="lyric-color-pink">you</span> still and I will (and I will) <span class="lyric-color-pink">forever</span>"
+                 </p>
+            </div>
+        </section>
+
+        <!-- Tela 6: Mixtape Final -->
+        <section id="tela-final" class="tela">
+            <div class="conteudo-final">
+                <h2 class="animate-on-scroll">a mixtape completa: seu jardim.</h2>
+                <img src="assets/images/cassete-final.png" class="cassete-final-img animate-on-scroll" alt="Mixtape Completa Decorada">
+                <p class="animate-on-scroll">cada 'Track' que você viu florescer neste jardim é uma música que pensei baseado no que escrevi. é a trilha sonora desse pequeno lugar, feito com carinho. espero que possamos voltar a se falar algum dia.</p>
+                <a href="https://www.youtube.com/watch?v=d4iGRWvlfMY" target="_blank" class="spotify-button animate-on-scroll">
+                    <i class="fab fa-youtube"></i> Track final
+                </a>
+                <p class="final-description animate-on-scroll">"Um belo <span class="lyric-color-purple">sonho</span> veio então, despertar minha vontade. Tudo vale a pena pra <span class="lyric-color-red">te reencontrar</span>"</p>
+                <p class="assinatura animate-on-scroll">com carinho,<br>niel.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+</body>
+</html>
